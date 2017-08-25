@@ -1,0 +1,33 @@
+<!--首页面--搜索页面-->
+<div class="searchs container" id="searchs">
+	<!--搜索框-->
+	<header>
+		<div class="header-pad">
+			<a href="#!/report" class="return" ng-click="toggle2(0)">
+				<img src="img/icon_navbar_back@3x.png" alt="" />
+			</a>
+			<div class="head-search">
+				<div class="head-search-mag" ng-hide="seadiv">
+					<span>输入菜谱名、食材名</span>
+					<div class="head-search-mag-img">
+						<img src="img/icon_search@3x.png"/>
+					</div>
+				</div>
+				<input type="text" class="sea" ng-focus="sea()" ng-blur="sea()"/>
+			</div>
+		</div>
+	</header>
+	<!--内容-->
+	<section class="nofooter">
+		<div class="searchs-center">
+			<h3>热门搜索</h3>
+			<ul>
+				<li>家常饭</li>
+				<li>减肥餐</li>
+				<li>草莓</li>
+				<li>晚餐</li>
+				<li>蛋糕</li>
+			</ul>
+		</div>
+	</section>
+</div>

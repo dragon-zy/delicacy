@@ -1,0 +1,31 @@
+<!--美食秀页面--我的动态-->
+<div class="container" ui-view="home">
+	<header>
+		<h1 class="topname">
+			<span>地点</span>
+			<a href="#!/report/dynamic/collection" class="h1-a">
+				<img src="img/icon_navbar_back@3x.png" alt="" />
+			</a>
+		</h1>
+	</header>
+	<section>
+		<div class="collectionpal">
+			<div class="coll-pal">
+				<div class="head-search">
+					<div class="head-search-mag" ng-hide="seadiv">
+						<span>搜索其他位置</span>
+						<div class="head-search-mag-img">
+							<img src="img/icon_search@3x.png"/>
+						</div>
+					</div>
+					<input type="text" class="sea" ng-focus="sea()" ng-blur="sea()"/>
+				</div>
+			</div>
+			<ul class="collsea-li" id="coll">
+				<li ng-click="dagou(0)"><span>不显示</span><span class="gou" style="display: block;">√</span></li>
+				<li ng-click="dagou(1)"><span>海南生态软件园</span><span class="gou" style="display: none;">√</span></li>
+				<li ng-click="dagou(2)"><span>澄迈县老城镇政府</span><span class="gou" style="display: none;">√</span></li>
+			</ul>
+		</div>
+	</section>
+</div>

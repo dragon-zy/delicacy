@@ -1,0 +1,248 @@
+{
+  "register.html": {
+    "href": "register.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_login@3x.png",
+      "img/icon_login_weixin.png",
+      "img/icon_login_weibo.png",
+      "img/icon_login_QQ.png"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_login@3x.png",
+      "img/icon_login_weixin.png",
+      "img/icon_login_weibo.png",
+      "img/icon_login_QQ.png"
+    ],
+    "refer": [
+      "index.html",
+      "register.html"
+    ],
+    "priority": 0
+  },
+  "data.html": {
+    "href": "data.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/icon_me_more.png",
+      "img/data_header@3x.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "search.html": {
+    "href": "search.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/icon_search.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "popularity.html": {
+    "href": "popularity.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/chengwei_pic@3x.png",
+      "img/chengwei_header@3x.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "aftertea.html": {
+    "href": "aftertea.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/class_list_Summer_pic@3x.png",
+      "img/icon_search.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "dynamic.html": {
+    "href": "dynamic.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/dynamic_header@3x.png",
+      "img/icon_dynamic_release.png",
+      "img/dynamic_last_jizhua_contents_pic@3x.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "mylist.html": {
+    "href": "mylist.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/listing_list_xiaren_pic.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "mycollection.html": {
+    "href": "mycollection.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/collect_list_xiangchun_pic.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "myset.html": {
+    "href": "myset.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/icon_navbar_back.png",
+      "img/icon_me_more.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/jquery-3.2.1.min.js",
+      "js/one.js",
+      "img/class.png",
+      "img/me.png",
+      "img/food.png",
+      "img/home.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/reset.css",
+      "css/footer.css",
+      "css/fit.css",
+      "img/friends.png",
+      "img/news.png",
+      "img/icon_home_hot.png",
+      "img/icon_home_tea.png",
+      "img/home_list_xionghaizi_pic.png",
+      "img/home_list_white_pic.png",
+      "img/home_list_lvdougao_pic.png",
+      "img/news_tips_header.png",
+      "img/food_list_qiqim_pic.png",
+      "img/icon_qiqim_commets.png",
+      "img/data_header@3x.png",
+      "img/icon_me_list_listing.png",
+      "img/icon_me_more.png",
+      "img/icon_me_list_collect.png",
+      "img/icon_me_list_set.png",
+      "img/icon_me_list_close.png",
+      "img/icon_food_list_buwang_like.png",
+      "img/fish_pic.png",
+      "img/yibaoming_list_Jelly_pic.png",
+      "img/icon_search.png",
+      "img/yibaoming_Jelly_header.png",
+      "img/me@3x.png",
+      "img/class@3x.png",
+      "img/home@3x.png",
+      "img/food@3x.png",
+      "css/abc.css",
+      "js/jquery.mobile-1.3.2.min.js",
+      "img/icon_navbar_back@3x.png",
+      "img/chengwei_pic@3x.png",
+      "img/collect_list_xiangchun_pic@3x.png",
+      "img/icon_me_more@3x.png",
+      "img/friends@3x.png",
+      "img/news@3x.png",
+      "img/news_tips_header@3x.png",
+      "img/food_list_qiqim_pic@3x.png",
+      "img/icon_qiqim_commets@3x.png",
+      "img/icon_me_list_listing@3x.png",
+      "img/icon_me_list_collect@3x.png",
+      "img/icon_me_list_set@3x.png",
+      "img/icon_me_list_close@3x.png",
+      "img/class_list_Summer_pic@3x.png",
+      "img/dynamic_header@3x.png",
+      "img/dynamic_last_jizhua_contents_pic@3x.png",
+      "img/listing_list_xiaren_pic@3x.png",
+      "img/icon_search@3x.png",
+      "img/icon_home_hot@3x.png",
+      "img/icon_home_tea@3x.png",
+      "img/icon_food_list_buwang_like@3x.png",
+      "img/yibaoming_list_Jelly_pic@3x.png",
+      "img/chengwei_header@3x.png",
+      "img/icon_dynamic_release@3x.png",
+      "img/yibaoming_Jelly_header@3x.png"
+    ],
+    "refer": [
+      "login.html",
+      "data.html",
+      "search.html",
+      "popularity.html",
+      "aftertea.html",
+      "dynamic.html",
+      "mylist.html",
+      "mycollection.html",
+      "myset.html"
+    ],
+    "priority": 0
+  }
+}

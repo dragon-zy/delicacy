@@ -1,0 +1,42 @@
+<div ui-view>
+	<!--我的页面-->
+	<div class="bfb swiper-container" ng-controller="myindexctrl">
+		<div class="swiper-wrapper" id="swi">
+			<!--首页面-->
+			<div class="home container swiper-slide" id="home-text" style="width: 3.75rem;">
+				<myindex></myindex>
+			</div>
+			
+			<!--美食秀页面-->
+			<div class="delic container swiper-slide" id="delic-text" style="width: 3.75rem;">
+				<delic></delic>
+			</div>
+				 
+			<!--课堂页面-->
+			<div class="classrooms container swiper-slide" style="width: 3.75rem;">
+				<header class="cla-head swiper-pagination1"></header>
+				<section class="secflex swiper-container1">
+					<div class="cla-center swiper-wrapper">
+						<div class="swiper-slide">
+							<classr></classr>
+						</div>
+						<div class="swiper-slide">
+							<classb></classb>
+						</div>
+					</div>
+				</section>
+				<div class="foter"></div>
+			</div>
+			
+			<!--我的页面-->
+			<div class="container swiper-slide" id="my-text" style="width: 3.75rem;">
+				<myhome></myhome>
+			</div>
+		</div>
+	</div>
+	
+	<!--底部固定-->
+	<footer id="ft">
+		<div class="footer swiper-pagination" id="foo"></div>
+	</footer>
+</div>

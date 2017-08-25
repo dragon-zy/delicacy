@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">-->
+    <title>引导页</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fit.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+//    	mui.plusReady(function() {
+//          /**
+//           * 获取系统状态栏高度
+//           * http://www.html5plus.org/doc/zh_cn/navigator.html#plus.navigator.getStatusbarHeight
+//           */
+//          var sh = plus.navigator.getStatusbarHeight();
+//          /**
+//           * 获取设备屏幕高度分辨率以及宽度分辨率
+//           * http://www.html5plus.org/doc/zh_cn/device.html#plus.screen.resolutionHeight
+//           * http://www.html5plus.org/doc/zh_cn/device.html#plus.screen.resolutionWidth
+//           */
+//          var h = plus.screen.resolutionHeight;
+//          var w = plus.screen.resolutionWidth;
+//          /**
+//           * 设置图片高度，这里图片并不规范；
+//           * 实际开发中，建议大家制作iphone6plus规格的图片；
+//           */
+//          var imgs = document.querySelectorAll(".guide-img");
+//          for(var i = 0, len = imgs.length; i < len; i++) {
+//              imgs[i].style.height = (h - sh) + "px";
+//              imgs[i].style.width = w + "px";
+//          }
+//          /**
+//           * 手动关闭启动页
+//           * http://www.html5plus.org/doc/zh_cn/navigator.html#plus.navigator.closeSplashscreen
+//           */
+//          plus.navigator.closeSplashscreen();
+//          document.getElementById("start").addEventListener("tap", function() {
+//              /**
+//               * 向本地存储中设置launchFlag的值，即启动标识；
+//               * http://www.html5plus.org/doc/zh_cn/storage.html#plus.storage.setItem
+//               */
+//              plus.storage.setItem("launchFlag", "true");
+//              mui.openWindow({
+//                  url: "main.html",
+//                  id: "main",
+//                  extras: {
+//                      mark: "gudie" //同样，这里也只是个标识，实际开发中并不用；
+//                  }
+//              });
+//          });
+//      });
+//      /**
+//       * 重写mui.back()，什么都不执行，反之用户返回到入口页；
+//       */
+//      mui.back = function() {};
+    </script>
+    <style type="text/css">
+    	.guide{
+    		position: relative;
+    		width: 3.75rem;
+    		height: 6.67rem;
+    		overflow: hidden;
+    	}
+    	.guide-img1,.guide-img2,.guide-img3{
+    		font-size: 0;
+    		position: absolute;
+    		width: 3.75rem;
+    		height: 6.67rem;
+    		top: 0;
+    	}
+    	.guide div img{
+    		width: 100%;
+    		height: 100%;
+    	}
+    	.guide-img1{
+    		left: 0;
+    	}
+    	.guide-img2{
+    		left: 3.75rem;
+    	}
+    	.guide-img3{
+    		left: 7.5rem;
+    	}
+    </style>
+</head>
+<body>
+	<div class="guide">
+		<div class="guide-img1">
+			<img src="img/guide1.png" alt="" />
+		</div>
+		<div class="guide-img2">
+			<img src="img/guide2.png" alt="" />
+		</div>
+		<div class="guide-img3">
+			<img src="img/guide3.png" alt="" />
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/one.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	new function(){
+			document.documentElement.style.fontSize=innerWidth/3.75+"px";
+			window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize=innerWidth/3.75+"px";},false);
+		}
+</script>
+</html>

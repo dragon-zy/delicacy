@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>美食臣主页</title>
+    <script src="js/angular.min.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+	<script src="module/home.js"></script>
+	<script src="module/news.js"></script>
+	<script src="module/myindex.js" type="text/javascript" charset="utf-8"></script>
+	<script src="module/classrooms.js" type="text/javascript" charset="utf-8"></script>
+	<script src="directive/d.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fit.css"/>
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+    <style type="text/css">
+    	.classrooms .swiper-pagination-bullet-active{
+    		position: relative;
+    		top: 0;
+    		left: 0;
+    	}
+    	.classrooms .swiper-pagination-bullet-active::after{
+    		content: '';
+    		position: absolute;
+    		left: 0;
+    		bottom: 1px;
+    		width: 100%;
+    		height: 2px;
+    		background: #2D2C2C;
+    	}
+    </style>
+</head>
+<body scroll="no">
+	
+	<!--我的页面-->
+	<div class="bfb swiper-container">
+		<div class="swiper-wrapper" id="swi">
+			<!--首页面-->
+			<div class="home container swiper-slide" id="home-text" style="width: 3.75rem;">
+				<myindex></myindex>
+			</div>
+			
+			<!--美食秀页面-->
+			<div class="delic container swiper-slide" id="delic-text" style="width: 3.75rem;">
+				<delic></delic>
+			</div>
+				 
+			<!--课堂页面-->
+			<div class="classrooms container swiper-slide" style="width: 3.75rem;">
+				<header class="cla-head swiper-pagination1"></header>
+				<section class="secflex swiper-container1">
+					<div class="cla-center swiper-wrapper">
+						<div class="swiper-slide">
+							<classr></classr>
+						</div>
+						<div class="swiper-slide">
+							<classb></classb>
+						</div>
+					</div>
+				</section>
+				<div class="foter"></div>
+			</div>
+			
+			<!--我的页面-->
+			<div class="container swiper-slide" id="my-text" style="width: 3.75rem;">
+				<myhome></myhome>
+			</div>
+		</div>
+	</div>
+	
+	<!--底部固定-->
+	<footer id="ft">
+		<div class="footer swiper-pagination" id="foo"></div>
+	</footer>
+</body>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	new function(){
+		document.documentElement.style.fontSize=innerWidth/3.75+"px";
+		window.addEventListener("resize",function(){
+			document.documentElement.style.fontSize=innerWidth/3.75+"px";
+		},false);
+	}
+	function $(id){
+		return document.getElementById(id);
+	}
+	var client = function(){
+		if(window.clientWidth != null){		//IE9以上游览器
+			return {
+				width : window.clientWidth,
+				height : window.clientHeight
+			}
+		}else if(document.compatMode == 'CSS1Compat'){		//怪异模式，声明了DTD，既声明了<!DOCTYPE html>
+			return {
+				width : document.documentElement.clientWidth,
+				height : document.documentElement.clientHeight
+			}
+		}else{								//怪异模式，没有声明了DTD，既没有声明<!DOCTYPE html>
+			return {
+				width : document.body.clientWidth,
+				height : document.body.clientHeight
+			}
+		}
+	}
+	var ycnone = document.getElementsByClassName('ycnone');
+	var container = document.getElementsByClassName('home');
+	var fooa = $('foo').childNodes;
+	console.log();
+	var cliW = client().width;
+	console.log(cliW)
+	var asd = ['<a id="home" class="',
+	'<a id="delic" class="',
+	'<a id="classroom" class="',
+	'<a id="my" class="'];
+	var asd2 = ['"><div><i class="iconfont icon-shouye"></i><span>首页</span></div></a>',
+	'"><div><i class="icon iconfont icon-xiangji"></i><span>美食秀</span></div></a>',
+	'"><div><i class="icon iconfont icon-class"></i><span>课堂</span></div></a>',
+	'"><div><i class="icon iconfont icon-20150825tubiaolianxizhuanhuan03"></i><span>我的</span></div></a>'];
+	var kt1 = ['课堂','已报名'];
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: false,
+        resistanceRatio : 0,
+        paginationBulletRender: function (swiper, index, className) {
+            return asd[index]+className+asd2[index];
+        }
+    });
+    var swiper1 = new Swiper('.swiper-container1',{
+    	nested:true,
+		resistanceRatio: 0,
+		pagination: '.swiper-pagination1',
+        paginationClickable: true,
+        paginationBulletRender: function (swiper, index, className) {
+            return '<div class="'+className+'">'+kt1[index]+'</div>';
+        }
+    });
+	for(var i=0;i<fooa.length;i++){
+		(function(a){
+			fooa[i].onclick = function(){
+				for(var j=0;j<fooa.length;j++){
+					this.parentNode.childNodes[j].className = 'swiper-pagination-bullet';
+				}
+				$('swi').style.transform = 'translate3d('+(-cliW*a)+'px, 0px, 0px)';
+				this.className = 'swiper-pagination-bullet swiper-pagination-bullet-active';
+			}
+		})(i);
+	}
+	for(var i=0;i<ycnone.length;i++){
+		(function(a){
+			ycnone[i].onclick = function(){
+				console.log('a')
+				for(var j=0;j<$('swi').childNodes.length;j++){
+					$('swi').childNodes[j].display = 'noen';
+				}
+				$('swi').childNodes[i].display = 'flex';
+				$('fo').display = 'none';
+			}
+		})(i);
+	}
+	
+</script>
+<!--<script src="js/one.js" type="text/javascript" charset="utf-8"></script>-->
+<!--<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>-->
+</html>

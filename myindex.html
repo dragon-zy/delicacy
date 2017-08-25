@@ -1,0 +1,65 @@
+<div class="container" ui-view="myindex">
+	<!--头部-搜索框-->
+	<header>
+		<a href="#!/report/searchs" class="header-pad" ng-click="toggle(0)">
+			<div class="head-search">
+				<div class="head-search-mag">
+					<span>菜谱 / 大厨</span>
+					<div class="head-search-mag-img">
+						<img src="img/icon_search@3x.png"/>
+					</div>
+				</div>
+			</div>
+		</a>
+	</header>
+	
+	<!--热门美食和下午茶-->
+	<section>
+		<div class="hots">
+			<a href="#!/report/popularity" ng-click="toggle(0)">
+				<div class="hot1">
+					<div><img src="img/icon_home_hot@3x.png" alt="" /></div>
+					<span>热门美食</span>
+				</div>
+			</a>
+			<a href="#!/report/aftertea" ng-click="toggle(0)">
+				<div class="hot2">
+					<div><img src="img/icon_home_tea@3x.png" alt="" /></div>
+					<span>下午茶</span>
+				</div>
+			</a>
+		</div>
+		
+		<!--内容-->
+		<div class="home-center">
+			<a class="center-t" href="#!/report/details" ng-click="toggle(0)">
+				<div class="center-t-img">
+					<img src="img/home_list_xionghaizi_pic@3x.png" alt="" />
+				</div>
+				<div class="center-t-text">
+					<h1 class="tit1">熊孩子的礼物</h1>
+					<p class="par1">六一儿童节，做一份应景又漂亮的食物送给宝宝，宝宝一定会喜欢的。</p>
+				</div>
+			</a>
+			<a class="center-t" href="#!/report/details" ng-click="toggle(0)">
+				<div class="center-t-img">
+					<img src="img/home_list_white_pic@3x.png" alt="" />
+				</div>
+				<div class="center-t-text">
+					<h1 class="tit1">复刻白色恋人</h1>
+					<p class="par1">这枚饼干封存了北海道的冰雪，清甜，微冷，让人着迷。</p>
+				</div>
+			</a>
+			<a class="center-t" href="#!/report/details" ng-click="toggle(0)">
+				<div class="center-t-img">
+					<img src="img/home_list_lvdougao_pic@3x.png" alt="" />
+				</div>
+				<div class="center-t-text">
+					<h1 class="tit1">红豆馅绿豆糕</h1>
+					<p class="par1">夏天来一款清凉消暑的绿豆糕，玩玩手机，看电视，很不错的消暑美食</p>
+				</div>
+			</a>
+		</div>
+	</section>
+	<div class="foter" ng-hide="visible"></div>
+</div>
